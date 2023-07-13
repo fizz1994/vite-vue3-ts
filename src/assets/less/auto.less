@@ -1,0 +1,43 @@
+/**
+ * @description 定义常用的快捷类名
+ * @author zhiwei.qiu
+ */
+
+@dimensions: {
+  p: padding;
+  m: margin;
+};
+
+@directions: {
+  t: top;
+  b: bottom;
+  l: left;
+  r: right;
+};
+
+// 四个方向的内外边距 1-30
+each(@dimensions, .(@dimValue, @dimKey) {
+    each(@directions, .(@dirValue, @dirKey) {
+        each(range(30), .(@v) {
+            .@{dimKey}@{dirKey}@{v} {
+                @{dimValue}-@{dirValue}: (@v * 1px);
+            }
+          });
+    });
+});
+
+// 内外边距 0-30，步长 5
+each(@dimensions, .(@dimValue, @dimKey) {
+    each(range(0, 30, 5), .(@v) {
+        .@{dimKey}@{v} {
+            @{dimValue}: (@v * 1px);
+        }
+      });
+});
+
+// 字体12-40
+each(range(12, 40), .(@v) {
+    .f@{v} {
+        font-size: (@v * 1px);
+    }
+});

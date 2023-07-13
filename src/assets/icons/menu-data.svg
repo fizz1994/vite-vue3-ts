@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_home_sidebar_ data</title>
+    <g id="1首页√√" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1首页-默认" transform="translate(-30.000000, -709.000000)" fill="#767E98">
+            <g id="分析" transform="translate(30.000000, 670.000000)">
+                <g id="编组-2" transform="translate(0.000000, 39.000000)">
+                    <path d="M3,6 L4,6 C4.55228475,6 5,6.44771525 5,7 L5,15 C5,15.5522847 4.55228475,16 4,16 L3,16 C2.44771525,16 2,15.5522847 2,15 L2,7 C2,6.44771525 2.44771525,6 3,6 Z M8,2 L9,2 C9.55228475,2 10,2.44771525 10,3 L10,15 C10,15.5522847 9.55228475,16 9,16 L8,16 C7.44771525,16 7,15.5522847 7,15 L7,3 C7,2.44771525 7.44771525,2 8,2 Z M13,9 L14,9 C14.5522847,9 15,9.44771525 15,10 L15,15 C15,15.5522847 14.5522847,16 14,16 L13,16 C12.4477153,16 12,15.5522847 12,15 L12,10 C12,9.44771525 12.4477153,9 13,9 Z" id="icon_home_sidebar_-data"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
