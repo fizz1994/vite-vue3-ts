@@ -5,13 +5,15 @@
     "module": "ESNext",
     "lib": ["ESNext", "DOM", "WebWorker", "WebWorker.ImportScripts"],
     "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Bundler mode */
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve",
+
+  "jsx": "preserve",
 
     /* Linting */
     "strict": true,
@@ -21,7 +23,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["types/vite/client", "unplugin-icons/types/vue"]
+    "types": ["vite/client", "unplugin-icons/types/vue"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]

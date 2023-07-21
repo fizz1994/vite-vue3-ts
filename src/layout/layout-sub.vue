@@ -1,12 +1,15 @@
-<template>
-  <router-view :key="routeName"></router-view>
-</template>
-
-<script setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
+<script setup lang="ts">
 const route = useRoute();
-const routeName = computed(() => route.name);
+
+const routeKey = computed(() =>
+  route.name === 'DataInsightObjectDetail'
+    ? route.name
+    : ((route.params?.id || route.name) as string)
+);
 </script>
 
-<style lang="less" scoped></style>
+<template>
+  <router-view :key="routeKey"></router-view>
+</template>
+
+<style lang="scss" scoped></style>

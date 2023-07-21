@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'eslint:recommended',
@@ -11,15 +12,15 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   overrides: [
-    {
-      env: {
-        node: true
-      },
-      files: ['.eslintrc.{js,cjs}'],
-      parserOptions: {
-        sourceType: 'script'
-      }
-    }
+    // {
+    //   env: {
+    //     node: true
+    //   },
+    //   files: ['.eslintrc.{js,cjs}'],
+    //   parserOptions: {
+    //     sourceType: 'script'
+    //   }
+    // }
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -49,5 +50,10 @@ module.exports = {
     'no-prototype-builtins': 'off',
     'no-console': 'error',
     'no-irregular-whitespace': 'off'
+  },
+  globals: {
+    Recordable: true,
+    DicItem: true,
+    PaginationProps: true
   }
 };

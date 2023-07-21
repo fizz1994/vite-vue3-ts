@@ -31,7 +31,7 @@
   </a-layout>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Sidebar from './sidebar/index.vue';
 import Navbar from './navbar/index.vue';
 // import Store from '@/store';

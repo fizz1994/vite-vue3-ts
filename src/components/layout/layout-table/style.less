@@ -1,0 +1,38 @@
+.layout-table {
+  &.border--inner {
+    :deep(.vxe-table--header-wrapper) {
+      background-color: #fff !important;
+    }
+
+    :deep(.vxe-table--border-line) {
+      border-width: 0;
+    }
+  }
+
+  :deep(.table-header-cell) {
+    font-size: 12px;
+    font-weight: 400;
+    color: #939abd;
+  }
+  :deep(.table-cell) {
+    font-size: 12px;
+    color: #111236;
+  }
+  :deep(.el-link) {
+    display: inline;
+    font-size: 12px !important;
+  }
+  :deep(.el-link__inner) {
+    display: inline;
+  }
+
+  :deep(.vxe-table--empty-content) {
+    img {
+      height: 162px;
+    }
+  }
+
+  :deep(.vxe-table--empty-content) {
+    width: 100%;
+  }
+}

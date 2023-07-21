@@ -9,3 +9,14 @@ declare module '*.vue' {
 }
 
 declare module 'nprogress';
+
+declare module 'mockjs';
+
+interface ImportMetaEnv {
+  readonly VITE_PROXY: string;
+  // 更多环境变量...
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}

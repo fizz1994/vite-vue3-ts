@@ -1,3 +1,23 @@
+<script setup lang="ts">
+//import Store from '@/store';
+
+// const userStore = Store.userStore();
+const router = useRouter();
+
+// 页面跳转
+const jumpTo = (path: string) => {
+  router.push({
+    path
+  });
+};
+
+const logOut = () => {
+  // userStore.Logout().then(() => {
+  //   router.push({ name: 'login' });
+  // });
+};
+</script>
+
 <template>
   <div class="layout-navbar">
     <!-- 导航栏-主体 -->
@@ -14,7 +34,7 @@
       </div>
       <a-divider type="vertical" />
       <div class="layout-navbar__item">
-        <a-popover overlayClassName="layout-navbar-popover" trigger="hover">
+        <a-popover overlayClassName="common-popover" trigger="click">
           <template #content>
             <a-menu>
               <a-menu-item>
@@ -40,26 +60,5 @@
     </section>
   </div>
 </template>
-
-<script setup>
-//import Store from '@/store';
-
-// const userStore = Store.userStore();
-const router = useRouter();
-
-// 页面跳转
-const jumpTo = (path, query) => {
-  router.push({
-    path,
-    query
-  });
-};
-
-const logOut = () => {
-  // userStore.Logout().then(() => {
-  //   router.push({ name: 'login' });
-  // });
-};
-</script>
 
 <style src="./style.less" lang="less" scoped></style>

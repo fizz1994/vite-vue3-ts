@@ -29,6 +29,9 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     // css
     css: {
       preprocessorOptions: {
+        scss: {
+          additionalData: `@use "@/assets/scss/vxe-table.scss" as *;`
+        },
         less: {
           modifyVars: {
             hack: 'true; @import "@/assets/less/antd.less"'
