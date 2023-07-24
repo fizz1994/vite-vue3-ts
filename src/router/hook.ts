@@ -14,7 +14,7 @@ NProgress.configure({
  * @param router
  * @returns
  */
-export const routerHook = async (router: Router) => {
+export const routerHook = (router: Router) => {
   router.beforeEach(async (to, from, next) => {
     NProgress.start();
 
